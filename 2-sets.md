@@ -39,4 +39,4 @@ Click [here](python_files/sets/unique-num-example.py) to see an example problem 
 
 ## `Solve Your Own Problem`
 #
-Now that you understand what a set is and what they are used for, let's start a problem for you to solve! In this code you will be going through each problem in order. Each problem should either be its own or should solve future cases. Click [here]() to start your lesson. Go ahead and check how you did compared to the solution [here]().
+Now that you understand what a set is and what they are used for, let's start a problem for you to solve! In this code you will be going through each problem in order. Each problem should either be its own or should solve future cases. This program will focus on unique names. Click [here](python_files/sets/unique-names.py) to start your lesson. Go ahead and check how you did compared to the solution [here](python_files/sets/unique-names-solution.py).

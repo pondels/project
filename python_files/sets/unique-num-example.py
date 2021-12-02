@@ -51,9 +51,7 @@ class UniqueNum:
         else:
             print("INDEX OUT OF RANGE")
 
-
-
-    def remove(self, amount):
+    def remove_num(self, amount):
         '''
             removes a random amount of numbers from the set
         '''
@@ -85,6 +83,7 @@ for num in range(101):
 
 # Defining the class
 uniquenum = UniqueNum(example_set)
+print("STARTING SET")
 uniquenum.show_set()
 print("--------------------------------\n")
 
@@ -125,7 +124,7 @@ print("--------------------------------")
 
 # Removes a given amount of random numbers from the set
 print("PROBLEM SET NUMBER 5")
-uniquenum.remove(10) # Removes 10 randomly selected numbers from the set
+uniquenum.remove_num(10) # Removes 10 randomly selected numbers from the set
 uniquenum.show_set()
-uniquenum.remove(150) # TOO MANY NUMBERS BEING REMOVED | No need to print the same set
+uniquenum.remove_num(150) # TOO MANY NUMBERS BEING REMOVED | No need to print the same set
 print("--------------------------------\n")
