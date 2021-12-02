@@ -9,7 +9,7 @@ class UniqueNames:
         '''
             Adds each unique name to the set
         '''
-        # Your Code Goe shere
+        # Your Code Goes shere
         pass
 
     def show_set(self):
