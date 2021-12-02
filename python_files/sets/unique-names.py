@@ -48,7 +48,7 @@ uniquenames = UniqueNames()
 
 # PROBLEM NUMBER 1
 # Creating the set of 50 unique names
-print("PROBLEM SET NUMBET 1")
+print("PROBLEM SET NUMBER 1")
 print()
 list_of_names = ["Jessie", "Walker", "Liberty", "Selena", "Hailey", "Braden", "Camila", "Camila", "Jarrett", "Damion", "Rayna", "Messiah", "Lillian", "Garrett", "Yoselin", "Wilson", "Zane", "Elyse", "Ayana", "Paola", "Simeon", "Ximena", "Layla", "Lillian", "Marlene", "Hazel", "Azul", "Micaela", "Liam", "Braylen", "Jordon", "Jared", "Jaquan", "Cason", "Alia", "Annabelle", "Victoria", "Kasey", "Tanner", "Jaylen", "Lizeth", "Nathalia", "Addyson", "Celia", "Naomi", "Jimena", "Drake", "Cole", "Yoselin", "Bryanna", "Pablo", "Jazlyn", "Odin", "Urijah", "Haylee", "Katie", "Makaila", "Danika", "Paris", "Abbigail", "Deangelo", "Thalia", "Frances", "Amir", "Albert", "Maximilian", "Tristen", "Kendal", "Sonia", "Morgan", "Jaidyn", "Slade", "Shaun", "Cooper", "Damion", "Ariella", "Sydnee", "Greyson", "George", "Levi", "Yadiel", "Jadyn", "Eliana", "Isaias", "Emanuel", "Tristen", "Sincere", "Hailee", "Geovanni", "Joslyn", "Rohan", "Aidan", "Joey", "Julia", "Alexandria", "Damari", "Isabella", "Augustus", "Jaylin", "Bella"]
 
