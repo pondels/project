@@ -107,3 +107,4 @@ Click [here](python_files/trees/database_tree.py) to see the example problem wit
 
 ## `Solve Your Own Problem`
 #
+Example Situation: You are at your new internship job when your boss gives you your first task. You are to take the given binary tree information and solve the 5 problems that are listed in the program. The tree consists of a heirarchy of milk prices, and you are to find the given information about the milk. Click [here](python_files/trees/milk.py) to start your problem set. When you are finished, click [here](python_files/trees/milk_solution.py) to view the solution.

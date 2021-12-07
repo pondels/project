@@ -48,13 +48,13 @@ class BST:
                 self._find(id, node.left)
 
     def find_all(self):
-        if self.root.left == None and self.root.right == None:
+        if self.root.left == None and self.root.right == None: # Only one is root
             print(self.root.data['f_name'])
         else:
             self._find_all(self.root)
 
     def _find_all(self, node):
-        if node.data == None:
+        if node.data == None: # No value found
             return
         if node.left != None:
             if node.left.data != None:
@@ -62,7 +62,7 @@ class BST:
         if node.right != None:
             if node.right.data != None:
                 self._find_all(node.right)
-        print(node.data['f_name'])
+        print(node.data['f_name']) # Value is returned and printed
         return
 
     def remove(self, id):
@@ -80,7 +80,6 @@ class BST:
             node.data = None
             node.right = None
             node.left = None
-            #print(node, node.data, node.right, node.left)
         elif id > node.data['id']: # ID Greater than node, check right
             self._remove(id, node.right)
         else:
@@ -93,7 +92,7 @@ database = [
     {'id': 2, 'f_name': 'Sandy', 'l_name': 'Cheeks',   'age': 22, 'eye_color': 'Brown',      'hair_color': 'Brown'},
     {'id': 6, 'f_name': 'Peter', 'l_name': 'Clark',    'age': 19, 'eye_color': 'Blue',       'hair_color': 'Blonde'},
     {'id': 1, 'f_name': 'Blake', 'l_name': 'Stofferd', 'age': 48, 'eye_color': 'Blue',       'hair_color': 'Red'},
-    {'id': 3, 'f_name': 'Randy', 'l_name': 'Ratchet',  'age': 75, 'eye_color': 'Greeb',      'hair_color': 'White'},
+    {'id': 3, 'f_name': 'Randy', 'l_name': 'Ratchet',  'age': 75, 'eye_color': 'Green',      'hair_color': 'White'},
     {'id': 5, 'f_name': 'Mary',  'l_name': 'Krinkle',  'age': 53, 'eye_color': 'Brown',      'hair_color': 'Brown'},
     {'id': 7, 'f_name': 'Lucy',  'l_name': 'Phillips', 'age': 41, 'eye_color': 'Blue-Green', 'hair_color': 'Blonde'}
 ]
@@ -101,6 +100,16 @@ database = [
 # INSERTING EACH PERSON INTO THE TREE
 for person in database:
     root.insert(person)
+
+# CURRENT TREE
+
+'''
+              John (4)
+          /            \\
+    Sandy (2)            Peter (6)
+    /       \\          /        \\
+Blake (1) Randy (3)  Mary (5)   Lucy (7)
+'''
 
 # FINDING A PERSON IN THE TREE
 print("FINDING USERS. . .")
@@ -130,5 +139,5 @@ root.find(2) # DOESNT EXIST
 print("---------------------")
 # ITERATES THROUGH ALL THE USERS IN THE TREE
 print("ALL USERS. . .")
-root.find_all()
+root.find_all() # Lucy, Peter, and John
 print("---------------------")
