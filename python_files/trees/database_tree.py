@@ -54,13 +54,16 @@ class BST:
             self._find_all(self.root)
 
     def _find_all(self, node):
-        if node == None:
+        if node.data == None:
             return
-        elif node.left != None:
-            self._find_all(node.left)
-        elif node.right != None:
-            self._find_all(node.right)
+        if node.left != None:
+            if node.left.data != None:
+                self._find_all(node.left)
+        if node.right != None:
+            if node.right.data != None:
+                self._find_all(node.right)
         print(node.data['f_name'])
+        return
 
     def remove(self, id):
         if id == self.root.data['id']:
@@ -69,9 +72,15 @@ class BST:
             self._remove(id, self.root)
 
     def _remove(self, id, node):
-        if id == node.data['id']: # Name Found
+        if node.data == None:
+            print("USER NOT FOUND")
+            return
+        if node.data['id'] == id: # Name Found
             print(f"REMOVING {node.data['f_name']}")
             node.data = None
+            node.right = None
+            node.left = None
+            #print(node, node.data, node.right, node.left)
         elif id > node.data['id']: # ID Greater than node, check right
             self._remove(id, node.right)
         else:
@@ -108,9 +117,9 @@ This can be fixed by rebalancing the tree, but we won't
 dive that deep in this lesson.
 '''
 print("REMOVING USERS. . .")
-root.remove(3) # 1, 2 and 3 are dropped
+root.remove(2) # 1, 2 and 3 are dropped
 root.remove(5) # 5 dropped
-root.remove(2) # NODE DOESN'T EXIST
+root.remove(3) # NODE DOESN'T EXIST
 print("---------------------")
 # FINDING THE PEOPLE ON THE NEW TREE
 # current tree = [4, 6, 7]
